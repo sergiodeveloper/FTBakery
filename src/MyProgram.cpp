@@ -141,7 +141,7 @@ void MyProgram::insertBread()
    
    
 void MyProgram::insertCheese()
-	{
+{
    	Cheese * cheese;
    	string buffer;
    	string type;
@@ -158,11 +158,11 @@ void MyProgram::insertCheese()
    	myMainList.insert(myMainList.end(), cheese);
    
    	cout << endl << cheese->getDescricao() << " - US$ " << fixed << setprecision(2) << cheese->getValor() << endl;  
-	};
+};
 	
 	
 void MyProgram::insertCheeseCottage()
-	{
+{
    	CheeseCottage * cheeseCottage;
    	string buffer;
    	string type;
@@ -179,11 +179,11 @@ void MyProgram::insertCheeseCottage()
    	myMainList.insert(myMainList.end(), cheeseCottage);
    
    	cout << endl << cheeseCottage->getDescricao() << " - US$ " << fixed << setprecision(2) << cheeseCottage->getValor() << endl;  
-	};
+};
    
    
 void MyProgram::insertCracker()
-   {
+{
    Cracker * cracker;
    string buffer;
    string type;
@@ -200,10 +200,10 @@ void MyProgram::insertCracker()
    myMainList.insert(myMainList.end(), cracker);
    
    cout << endl << cracker->getDescricao() << " - US$ " << fixed << setprecision(2) << cracker->getValor() << endl;   
-   };
+};
 
 void MyProgram::insertFilledWafer()
-   {
+{
    FilledWafer * filledWafer;
    string buffer;
    string type;
@@ -222,10 +222,10 @@ void MyProgram::insertFilledWafer()
    myMainList.insert(myMainList.end(), filledWafer);
    
    cout << endl << filledWafer->getDescricao() << " - US$ " << fixed << setprecision(2) << filledWafer->getValor() << endl;   
-   };
+};
    
 void MyProgram::insertHam()
-	{
+{
    	Ham * ham;
    	string buffer;
    	string type;
@@ -242,11 +242,11 @@ void MyProgram::insertHam()
    	myMainList.insert(myMainList.end(), ham);
    
    	cout << endl << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;  
-	};
+};
 	
    
 void MyProgram::insertMortadella()
-	{
+{
    	Mortadella * mortadella;
    	string buffer;
    	string type;
@@ -263,13 +263,13 @@ void MyProgram::insertMortadella()
    	myMainList.insert(myMainList.end(), mortadella);
    
    	cout << endl << mortadella->getDescricao() << " - US$ " << fixed << setprecision(2) << mortadella->getValor() << endl;  
-	};
+};
 	
 
 
   
 void MyProgram::verifyArguments(int argc, char* argv[])
-   {
+{
    if(verboseMode)                     { delete verboseMode;         }; 
    if(shortMessageMode)                { delete shortMessageMode;    };  
 
@@ -277,16 +277,34 @@ void MyProgram::verifyArguments(int argc, char* argv[])
    shortMessageMode = NULL;
    
    for(int count = 1; count < argc; count++)
-      {
+   {
       if(string(argv[count]) == "-v") { verboseMode      = new MyBooleanClass(true); };
       if(string(argv[count]) == "-s") { shortMessageMode = new MyBooleanClass(true); };
-      };
+   };
    
    if(!verboseMode)
    		{ verboseMode      = new MyBooleanClass();     };  // default is false
    if(!shortMessageMode)
    		{ shortMessageMode = new MyBooleanClass();     };  // default is false
-   }
+}
+
+
+const MyBooleanClass* MyProgram::getVerboseMode(){
+	return this->verboseMode;
+}
+
+void MyProgram::setVerboseMode(MyBooleanClass* verboseMode){
+	this->verboseMode = verboseMode;
+}
+
+const MyBooleanClass* MyProgram::getShortMessageMode(){
+	return this->shortMessageMode;
+}
+
+void MyProgram::setShortMessageMode(MyBooleanClass* shortMessageMode){
+	this->shortMessageMode = shortMessageMode;
+}
+
 
 
 

@@ -34,6 +34,12 @@ private:
 
 public:
 	MyProgram(int argc, char* argv[]);
+	
+	const MyBooleanClass* getVerboseMode();
+	void setVerboseMode(MyBooleanClass*);
+	
+	const MyBooleanClass* getShortMessageMode();
+	void setShortMessageMode(MyBooleanClass*);
 };
 
    
