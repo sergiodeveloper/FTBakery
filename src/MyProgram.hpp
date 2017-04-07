@@ -1,4 +1,6 @@
 #include <string>
+#include "a02ex01_a.hpp"
+#include "a02ex03_b.hpp"
 
 using namespace std;
 
