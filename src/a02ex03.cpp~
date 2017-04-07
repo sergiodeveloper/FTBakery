@@ -15,13 +15,12 @@
    
 int main(int argc, char* argv[])
    {
-   MyProgram programa;
-   programa.verifyArguments(argc, argv);
-   programa.myMainList.clear();
-   programa.Information::wellcome("C++ Program " + string(argv[0]) + " running!", shortMessageMode->getStatus());
-   programa.process();
-   programa.Information::bye(shortMessageMode->getStatus());
-   programa.clearAll();
+   verifyArguments(argc, argv);
+   myMainList.clear();
+   Information::wellcome("C++ Program " + string(argv[0]) + " running!", shortMessageMode->getStatus());
+   process();
+   Information::bye(shortMessageMode->getStatus());
+   clearAll();
    };
 
 
