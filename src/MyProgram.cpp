@@ -20,13 +20,13 @@
 using namespace std;
 
 MyProgram::MyProgram()
-   {
+{
    this->verboseMode = NULL;
    this->shortMessageMode = NULL;
-   };
+};
       
-void process()
-   {
+void MyProgram::process()
+{
    vector<string> opcoes({ "Exit", "List Database", "Insert Items" });
    Menu menu("Main Menu", opcoes);
    int escolha = -1;
@@ -41,10 +41,10 @@ void process()
  	 case 2: { insertItems();  }; break;
          };
       };
-   };
+};
    
-void clearAll()   // está errada ! corrigir !!!!
-   {
+void MyProgram::clearAll()   // está errada ! corrigir !!!!
+{
    myMainList.clear();
 
    vector<Food *>::iterator scan = myMainList.begin();
@@ -62,11 +62,10 @@ void clearAll()   // está errada ! corrigir !!!!
    delete verboseMode;
    delete shortMessageMode;
    
-  };
+};  
   
-  
-void listItems()
-   {
+void MyProgram::listItems()
+{
    double total = 0.00;
       
    cout << "------------------------------\nItems in Database:\n------------------------------\n";
@@ -79,11 +78,11 @@ void listItems()
       scan++;
       };
    cout << "  Total cost: US$ " << fixed << setprecision(2) << total << endl;
-   };
+};
    
    
-void insertItems()
-   {
+void MyProgram::insertItems()
+{
    
    	
    cout << "------------------------------\nInset New Items:\n------------------------------\n";
@@ -106,11 +105,11 @@ void insertItems()
  	 case 7: { insertMortadella();  }; break;
          };
       };
-   };
+};
    
 
-void insertBread()
-   {
+void MyProgram::insertBread()
+{
    Bread * bread;
    string buffer;
    string type;
@@ -127,9 +126,10 @@ void insertBread()
    myMainList.insert(myMainList.end(), bread);
    
    cout << endl << bread->getDescricao() << " - US$ " << fixed << setprecision(2) << bread->getValor() << endl;   
-   };
+};
    
-void InsertCheese()
+   
+void MyProgram::insertCheese()
 	{
    	Cheese * cheese;
    	string buffer;
@@ -149,7 +149,8 @@ void InsertCheese()
    	cout << endl << cheese->getDescricao() << " - US$ " << fixed << setprecision(2) << cheese->getValor() << endl;  
 	};
 	
-void InsertCheeseCottage()
+	
+void MyProgram::InsertCheeseCottage()
 	{
    	CheeseCottage * cheeseCottage;
    	string buffer;
@@ -169,7 +170,8 @@ void InsertCheeseCottage()
    	cout << endl << cheeseCottage->getDescricao() << " - US$ " << fixed << setprecision(2) << cheeseCottage->getValor() << endl;  
 	};
    
-void insertCracker()
+   
+void MyProgram::insertCracker()
    {
    Cracker * cracker;
    string buffer;
@@ -189,7 +191,7 @@ void insertCracker()
    cout << endl << cracker->getDescricao() << " - US$ " << fixed << setprecision(2) << cracker->getValor() << endl;   
    };
 
-void insertFilledWafer()
+void MyProgram::insertFilledWafer()
    {
    FilledWafer * filledWafer;
    string buffer;
@@ -211,7 +213,7 @@ void insertFilledWafer()
    cout << endl << filledWafer->getDescricao() << " - US$ " << fixed << setprecision(2) << filledWafer->getValor() << endl;   
    };
    
-void InsertHam()
+void MyProgram::insertHam()
 	{
    	Ham * ham;
    	string buffer;
@@ -232,7 +234,7 @@ void InsertHam()
 	};
 	
    
-void InsertMortadella()
+void MyProgram::insertMortadella()
 	{
    	Mortadella * mortadella;
    	string buffer;
@@ -255,7 +257,7 @@ void InsertMortadella()
 
 
   
-void verifyArguments(int argc, char* argv[])
+void MyProgram::verifyArguments(int argc, char* argv[])
    {
    if(verboseMode)                     { delete verboseMode;         }; 
    if(shortMessageMode)                { delete shortMessageMode;    };  
@@ -269,7 +271,12 @@ void verifyArguments(int argc, char* argv[])
       if(string(argv[count]) == "-s") { shortMessageMode = new MyBooleanClass(true); };
       };
    
-   if(!verboseMode)                    { verboseMode      = new MyBooleanClass();     };  // default is false
-   if(!shortMessageMode)               { shortMessageMode = new MyBooleanClass();     };  // default is false
+   if(!verboseMode)
+   		{ verboseMode      = new MyBooleanClass();     };  // default is false
+   if(!shortMessageMode)
+   		{ shortMessageMode = new MyBooleanClass();     };  // default is false
    }
+
+
+
 
