@@ -4,6 +4,9 @@
 
 using namespace std;
 
+/**
+ * Classe principal do programa
+ */
 class MyProgram
    {
    
@@ -11,7 +14,7 @@ class MyProgram
     MyBooleanClass * verboseMode;
 	MyBooleanClass * shortMessageMode;
 	vector<Food *> myMainList;
-      
+    
    public:
        
        MyProgram();
