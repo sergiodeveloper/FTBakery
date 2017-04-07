@@ -8,36 +8,33 @@ using namespace std;
  * Classe principal do programa
  */
 class MyProgram
-   {
-   
-   private:
-    MyBooleanClass * verboseMode;
+{
+
+private:
+	MyBooleanClass * verboseMode;
 	MyBooleanClass * shortMessageMode;
-	
+
 	/**
-	 * Lista onde serão armazenados os Foods adicionados
-	 */
+	* Lista onde serão armazenados os Foods adicionados
+	*/
 	vector<Food *> myMainList;
-   
-   public:
-       
-       MyProgram();
-	   void process(void);
-	   void verifyArguments(int, char* []);
-	   void clearAll(void);
-	   
-	   void listItems(void);
-	   void insertItems(void);
-	   void insertBread(void);
-	   void insertCheese(void);
-	   void insertCheeseCottage(void);
-	   void insertCracker(void);
-	   void insertFilledWafer(void);
-	   void insertHam(void);
-	   void insertMortadella(void);
-	  
-     
-   };
-   
+	void process(void);
+	void verifyArguments(int, char* []);
+	void clearAll(void);
+
+	void listItems(void);
+	void insertItems(void);
+	void insertBread(void);
+	void insertCheese(void);
+	void insertCheeseCottage(void);
+	void insertCracker(void);
+	void insertFilledWafer(void);
+	void insertHam(void);
+	void insertMortadella(void);
+
+public:
+	MyProgram(int argc, char* argv[]);
+};
+
    
 /* fim de arquivo */

@@ -19,10 +19,20 @@
 
 using namespace std;
 
-MyProgram::MyProgram()
+
+MyProgram::MyProgram(int argc, char* argv[])
 {
    this->verboseMode = NULL;
    this->shortMessageMode = NULL;
+   
+   
+   verifyArguments(argc, argv);
+   myMainList.clear();
+   Information::wellcome("C++ Program " + string(argv[0]) + " running!", shortMessageMode->getStatus());
+   process();
+   Information::bye(shortMessageMode->getStatus());
+   clearAll();
+   
 };
       
 void MyProgram::process()
@@ -151,7 +161,7 @@ void MyProgram::insertCheese()
 	};
 	
 	
-void MyProgram::InsertCheeseCottage()
+void MyProgram::insertCheeseCottage()
 	{
    	CheeseCottage * cheeseCottage;
    	string buffer;

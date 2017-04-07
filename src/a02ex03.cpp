@@ -14,15 +14,9 @@
 
    
 int main(int argc, char* argv[])
-   {
-   MyProgram programa;
-   programa.verifyArguments(argc, argv);
-   programa.myMainList.clear();
-   programa.Information::wellcome("C++ Program " + string(argv[0]) + " running!", shortMessageMode->getStatus());
-   programa.process();
-   programa.Information::bye(shortMessageMode->getStatus());
-   programa.clearAll();
-   };
+{
+   MyProgram programa(argc, argv);
+};
 
 
 /* fim de arquivo */
