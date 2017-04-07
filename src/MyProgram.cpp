@@ -43,18 +43,19 @@ void MyProgram::process()
       };
 };
    
-void MyProgram::clearAll()   // está errada ! corrigir !!!!
+void MyProgram::clearAll()   // corrigido!
 {
-   myMainList.clear();
-
    vector<Food *>::iterator scan = myMainList.begin();
    
    while(scan != myMainList.end())
-      {
+   {
       (*scan) = NULL;
       delete (*scan);
       scan++;
-      };
+   };
+	
+   // A lista deve ser esvaziada após os seus itens serem deletados
+   myMainList.clear();
     
     verboseMode = NULL;
    	shortMessageMode = NULL;

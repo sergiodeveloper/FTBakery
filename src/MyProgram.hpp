@@ -13,8 +13,12 @@ class MyProgram
    private:
     MyBooleanClass * verboseMode;
 	MyBooleanClass * shortMessageMode;
+	
+	/**
+	 * Lista onde serão armazenados os Foods adicionados
+	 */
 	vector<Food *> myMainList;
-    
+   
    public:
        
        MyProgram();
