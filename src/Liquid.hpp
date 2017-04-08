@@ -6,10 +6,9 @@
 
 class Liquid: public Food
 {
-private:
-	
-	
 public:
-	Liquid();
+	Liquid(double);
+	
+	virtual double getValor();
 	
 };

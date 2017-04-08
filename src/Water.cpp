@@ -5,13 +5,11 @@
    Maio/2015
 */
 
-#include <string>
 #include "Water.hpp"
-#include "a02ex03_b.hpp"
 
 using namespace std;
 
-Water::Water(string tipo, int unidades, double valor)
+Water::Water(string tipo, int unidades, double valor): Liquid(valor)
    {
    this->tipo     = tipo;
    this->unidades = unidades;

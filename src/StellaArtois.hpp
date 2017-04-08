@@ -12,10 +12,10 @@ class StellaArtois : public Beer
    {
    private:
       string tipo;
-      float peso;
+      int unidades;
       
    public:
-     StellaArtois(string, float, double);
+     StellaArtois(string, int, double);
       virtual string getDescricao();
    };
    

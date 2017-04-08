@@ -5,9 +5,7 @@
    Maio/2015
 */
 
-#include <string>
 #include "StellaArtois.hpp"
-#include "Beer.hpp"
 
 using namespace std;
 

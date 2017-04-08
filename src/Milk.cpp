@@ -5,13 +5,11 @@
    Maio/2015
 */
 
-#include <string>
 #include "Milk.hpp"
-#include "a02ex03_b.hpp"
 
 using namespace std;
 
-Milk::Milk(string tipo, int unidades, double valor)
+Milk::Milk(string tipo, int unidades, double valor): Liquid(valor)
    {
    this->tipo     = tipo;
    this->unidades = unidades;

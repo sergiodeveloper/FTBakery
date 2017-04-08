@@ -5,13 +5,11 @@
    Maio/2015
 */
 
-#include <string>
 #include "Soda.hpp"
-#include "a02ex03_b.hpp"
 
 using namespace std;
 
-Soda::Soda(string tipo, int unidades, double valor)
+Soda::Soda(string tipo, int unidades, double valor): Liquid(valor)
    {
    this->tipo     = tipo;
    this->unidades = unidades;

@@ -6,17 +6,14 @@
 */
 
 #include <string>
+#include "Liquid.hpp"
 
 using namespace std;
 
 class Beer: public Liquid
 {
-   protected:
-      double valor;
-      
    public:
       Beer(double);
-      virtual double getValor();
 
       virtual string getDescricao() = 0;
 };
