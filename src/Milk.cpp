@@ -17,7 +17,7 @@ Milk::Milk(string tipo, int unidades, double valor): Liquid(valor)
    
 string Milk::getDescricao()
    { 
-   return ("Milk" + tipo + " - " + to_string(unidades) + " un/pacote."); 
+   return ("Milk " + tipo + " - " + to_string(unidades) + " un/pacote."); 
    };
    
 /* fim de arquivo */

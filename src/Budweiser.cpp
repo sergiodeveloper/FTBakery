@@ -18,7 +18,7 @@ Budweiser::Budweiser(string tipo, int unidades, double valor) : Beer(valor)
    
 string Budweiser::getDescricao()
    { 
-   return ("Budweiser" + tipo + " - " + to_string(unidades) + " un/pacote."); 
+   return ("Budweiser " + tipo + " - " + to_string(unidades) + " un/pacote."); 
    };
    
 /* fim de arquivo */

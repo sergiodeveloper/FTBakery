@@ -17,7 +17,7 @@ Soda::Soda(string tipo, int unidades, double valor): Liquid(valor)
    
 string Soda::getDescricao()
    { 
-   return ("Soda" + tipo + " - " + to_string(unidades) + " un/pacote."); 
+   return ("Soda " + tipo + " - " + to_string(unidades) + " un/pacote."); 
    };
    
 /* fim de arquivo */

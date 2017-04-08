@@ -17,7 +17,7 @@ StellaArtois::StellaArtois(string tipo, int unidades, double valor) : Beer(valor
    
 string StellaArtois::getDescricao()
    { 
-   return ("Stella Artois" + tipo + " - " + to_string(unidades) + " un/pacote."); 
+   return ("Stella Artois " + tipo + " - " + to_string(unidades) + " un/pacote."); 
    };
    
 /* fim de arquivo */

@@ -18,7 +18,7 @@ Corona::Corona(string tipo, int unidades, double valor) : Beer(valor)
    
 string Corona::getDescricao()
    { 
-   return ("Corona" + tipo + " - " + to_string(unidades) + " un/pacote."); 
+   return ("Corona " + tipo + " - " + to_string(unidades) + " un/pacote."); 
    };
    
 /* fim de arquivo */

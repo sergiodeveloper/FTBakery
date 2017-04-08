@@ -17,7 +17,7 @@ Water::Water(string tipo, int unidades, double valor): Liquid(valor)
    
 string Water::getDescricao()
    { 
-   return ("Water" + tipo + " - " + to_string(unidades) + " un/pacote."); 
+   return ("Water " + tipo + " - " + to_string(unidades) + " un/pacote."); 
    };
    
 /* fim de arquivo */
