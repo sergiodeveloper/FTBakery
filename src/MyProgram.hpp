@@ -44,6 +44,15 @@ private:
 	void insertFilledWafer(void);
 	void insertHam(void);
 	void insertMortadella(void);
+	void insertMilk(void);
+	void insertWater(void);
+	void insertSoda(void);
+	void insertBeer(void);
+	
+	void insertBrahma(void);
+	void insertBudweiser(void);
+	void insertCorona(void);
+	void insertStellaArtois(void);
 
 public:
 	MyProgram();

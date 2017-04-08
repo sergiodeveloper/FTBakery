@@ -86,7 +86,12 @@ void MyProgram::insertItems()
    	
    cout << "------------------------------\nInset New Items:\n------------------------------\n";
   
-   Menu menu("Insert Items", { "Exit", "Bread", "Cheese", "Cottage Cheese", "Cracker", "Filled Wafer", "Ham", "Mortadella" });
+   Menu menu("Insert Items", {
+	   "Exit",
+	   "Bread", "Cheese", "Cottage Cheese", "Cracker",
+	   "Filled Wafer", "Ham", "Mortadella",
+	   "Milk", "Water", "Soda", "Beer"
+   });
    int escolha = -1;
    
    while(escolha)
@@ -97,11 +102,15 @@ void MyProgram::insertItems()
          {
  	 case 1: { insertBread();       }; break;
  	 case 2: { insertCheese();      }; break;
- 	 case 3: { insertCheeseCottage();}; break;
+ 	 case 3: { insertCheeseCottage();};break;
  	 case 4: { insertCracker();     }; break;
  	 case 5: { insertFilledWafer(); }; break;
  	 case 6: { insertHam();         }; break;
  	 case 7: { insertMortadella();  }; break;
+ 	 case 8: { insertMilk();        }; break;
+ 	 case 9: { insertWater();       }; break;
+ 	 case 10:{ insertSoda();        }; break;
+ 	 case 11:{ insertBeer();        }; break;
          };
       };
 };
@@ -293,6 +302,169 @@ void MyProgram::setShortMessageMode(MyBooleanClass* shortMessageMode){
 	this->shortMessageMode = shortMessageMode;
 }
 
+
+void MyProgram::insertMilk()
+{
+   	Milk * milk;
+   	string buffer;
+   	string type;
+   	int    units;
+   	double cost;
+
+   	cout << "------------------------------\nInsert Milk:\n------------------------------\n";
+   	cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   	cout << "Units .....: "; getline(cin, buffer); units = stoi(buffer);
+   	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   	cin.clear();
+   
+   	ham = new Milk(type, weight,cost);
+   	myMainList.insert(myMainList.end(), milk);
+   
+   	cout << endl << milk->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;  
+};
+
+/*
+void MyProgram::insertMilk()
+{
+   	Ham * ham;
+   	string buffer;
+   	string type;
+   	float  weight;
+   	double cost;
+
+   	cout << "------------------------------\nInsert Ham:\n------------------------------\n";
+   	cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   	cout << "Weight ....: "; getline(cin, buffer); weight = stof(buffer);
+   	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   	cin.clear();
+   
+   	ham = new Ham(type, weight,cost);
+   	myMainList.insert(myMainList.end(), ham);
+   
+   	cout << endl << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;  
+};
+
+void MyProgram::insertMilk()
+{
+   	Ham * ham;
+   	string buffer;
+   	string type;
+   	float  weight;
+   	double cost;
+
+   	cout << "------------------------------\nInsert Ham:\n------------------------------\n";
+   	cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   	cout << "Weight ....: "; getline(cin, buffer); weight = stof(buffer);
+   	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   	cin.clear();
+   
+   	ham = new Ham(type, weight,cost);
+   	myMainList.insert(myMainList.end(), ham);
+   
+   	cout << endl << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;  
+};
+
+void MyProgram::insertMilk()
+{
+   	Ham * ham;
+   	string buffer;
+   	string type;
+   	float  weight;
+   	double cost;
+
+   	cout << "------------------------------\nInsert Ham:\n------------------------------\n";
+   	cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   	cout << "Weight ....: "; getline(cin, buffer); weight = stof(buffer);
+   	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   	cin.clear();
+   
+   	ham = new Ham(type, weight,cost);
+   	myMainList.insert(myMainList.end(), ham);
+   
+   	cout << endl << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;  
+};
+
+void MyProgram::insertMilk()
+{
+   	Ham * ham;
+   	string buffer;
+   	string type;
+   	float  weight;
+   	double cost;
+
+   	cout << "------------------------------\nInsert Ham:\n------------------------------\n";
+   	cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   	cout << "Weight ....: "; getline(cin, buffer); weight = stof(buffer);
+   	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   	cin.clear();
+   
+   	ham = new Ham(type, weight,cost);
+   	myMainList.insert(myMainList.end(), ham);
+   
+   	cout << endl << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;  
+};
+
+void MyProgram::insertMilk()
+{
+   	Ham * ham;
+   	string buffer;
+   	string type;
+   	float  weight;
+   	double cost;
+
+   	cout << "------------------------------\nInsert Ham:\n------------------------------\n";
+   	cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   	cout << "Weight ....: "; getline(cin, buffer); weight = stof(buffer);
+   	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   	cin.clear();
+   
+   	ham = new Ham(type, weight,cost);
+   	myMainList.insert(myMainList.end(), ham);
+   
+   	cout << endl << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;  
+};
+
+void MyProgram::insertMilk()
+{
+   	Ham * ham;
+   	string buffer;
+   	string type;
+   	float  weight;
+   	double cost;
+
+   	cout << "------------------------------\nInsert Ham:\n------------------------------\n";
+   	cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   	cout << "Weight ....: "; getline(cin, buffer); weight = stof(buffer);
+   	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   	cin.clear();
+   
+   	ham = new Ham(type, weight,cost);
+   	myMainList.insert(myMainList.end(), ham);
+   
+   	cout << endl << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;  
+};
+
+void MyProgram::insertMilk()
+{
+   	Ham * ham;
+   	string buffer;
+   	string type;
+   	float  weight;
+   	double cost;
+
+   	cout << "------------------------------\nInsert Ham:\n------------------------------\n";
+   	cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   	cout << "Weight ....: "; getline(cin, buffer); weight = stof(buffer);
+   	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   	cin.clear();
+   
+   	ham = new Ham(type, weight,cost);
+   	myMainList.insert(myMainList.end(), ham);
+   
+   	cout << endl << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;  
+};
+
+*/
 
 
 
