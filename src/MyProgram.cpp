@@ -368,7 +368,28 @@ void MyProgram::insertSoda()
 
 void MyProgram::insertBeer()
 {
-	// TODO
+   
+   	
+   cout << "------------------------------\nChoose a beer:\n--------------------------------\n";
+  
+   Menu menu("Beers", {
+	   "Exit",
+	   "Brahma", "Budweiser", "Corona", "Stella Artois"
+   });
+   int escolha = -1;
+   
+   while(escolha)
+      {
+      escolha = menu.getEscolha();
+ 
+      switch(escolha)
+         {
+ 	 case 1: { insertBrahma();       }; break;
+ 	 case 2: { insertBudweiser();    }; break;
+ 	 case 3: { insertCorona();       }; break;
+ 	 case 4: { insertStellaArtois(); }; break;
+         };
+      };
 };
 
 
