@@ -12,10 +12,10 @@ class Brahma : public Beer
    {
    private:
       string tipo;
-      float peso;
+      int unidades;
       
    public:
-     Brahma(string, float, double);
+     Brahma(string, int, double);
       virtual string getDescricao();
    };
    

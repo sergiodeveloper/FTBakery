@@ -6,11 +6,11 @@
 */
 
 #include <string>
-#include "a02ex03_b.hpp"
+#include "Liquid.hpp"
 
 using namespace std;
 
-class Milk : public Food
+class Milk: public Liquid
    {
    private:
       string tipo;

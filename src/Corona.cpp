@@ -7,7 +7,6 @@
 
 #include <string>
 #include "Corona.hpp"
-#include "Beer.hpp"
 
 using namespace std;
 

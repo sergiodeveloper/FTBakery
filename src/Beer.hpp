@@ -9,8 +9,8 @@
 
 using namespace std;
 
-class Beer
-   {
+class Beer: public Liquid
+{
    protected:
       double valor;
       
@@ -19,6 +19,6 @@ class Beer
       virtual double getValor();
 
       virtual string getDescricao() = 0;
-   };
+};
    
 /* fim de arquivo */

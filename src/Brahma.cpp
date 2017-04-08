@@ -7,7 +7,6 @@
 
 #include <string>
 #include "Brahma.hpp"
-#include "Beer.hpp"
 
 using namespace std;
 

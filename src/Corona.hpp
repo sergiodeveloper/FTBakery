@@ -12,10 +12,10 @@ class Corona : public Beer
    {
    private:
       string tipo;
-      float peso;
+      int unidades;
       
    public:
-     Corona(string, float, double);
+     Corona(string, int, double);
       virtual string getDescricao();
    };
    

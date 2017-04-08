@@ -12,10 +12,10 @@ class Budweiser : public Beer
    {
    private:
       string tipo;
-      float peso;
+      int unidades;
       
    public:
-     Budweiser(string, float, double);
+     Budweiser(string, int, double);
       virtual string getDescricao();
    };
    
