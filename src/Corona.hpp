@@ -10,10 +10,6 @@ using namespace std;
 
 class Corona : public Beer
    {
-   private:
-      string tipo;
-      int unidades;
-      
    public:
      Corona(string, int, double);
      virtual string getDescricao();

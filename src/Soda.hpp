@@ -12,10 +12,6 @@ using namespace std;
 
 class Soda : public Liquid
    {
-   private:
-      string tipo;
-      int    unidades;
-      
    public:
       Soda(string, int, double);
       virtual string getDescricao();

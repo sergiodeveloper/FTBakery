@@ -9,6 +9,10 @@
 
 class Liquid: public Food
 {
+protected:
+   string tipo;
+   int    unidades;
+	
 public:
 	Liquid(double);
 	

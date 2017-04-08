@@ -73,10 +73,10 @@ public:
 	
 	void verifyArguments(int, char* []);
 	
-	const MyBooleanClass* getVerboseMode();
+	MyBooleanClass* getVerboseMode() const;
 	void setVerboseMode(MyBooleanClass*);
 	
-	const MyBooleanClass* getShortMessageMode();
+	MyBooleanClass* getShortMessageMode() const;
 	void setShortMessageMode(MyBooleanClass*);
 };
 

@@ -11,14 +11,10 @@
 using namespace std;
 
 class Water : public Liquid
-   {
-   private:
-      string tipo;
-      int    unidades;
-      
+{
    public:
       Water(string, int, double);
       virtual string getDescricao();
-   };
+};
    
 /* fim de arquivo */

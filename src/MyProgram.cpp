@@ -13,7 +13,6 @@ MyProgram::MyProgram()
 
 void MyProgram::start(){
 	myMainList.clear();
-    //Information::wellcome("C++ Program " + string(argv[0]) + " running!", shortMessageMode->getStatus()); TODO
     process();
     Information::bye(shortMessageMode->getStatus());
     clearAll();
@@ -282,7 +281,7 @@ void MyProgram::verifyArguments(int argc, char* argv[])
 }
 
 
-const MyBooleanClass* MyProgram::getVerboseMode(){
+MyBooleanClass* MyProgram::getVerboseMode() const{
 	return this->verboseMode;
 }
 
@@ -290,7 +289,7 @@ void MyProgram::setVerboseMode(MyBooleanClass* verboseMode){
 	this->verboseMode = verboseMode;
 }
 
-const MyBooleanClass* MyProgram::getShortMessageMode(){
+MyBooleanClass* MyProgram::getShortMessageMode() const{
 	return this->shortMessageMode;
 }
 

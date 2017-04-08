@@ -11,14 +11,10 @@
 using namespace std;
 
 class Milk: public Liquid
-   {
-   private:
-      string tipo;
-      int    unidades;
-      
+{
    public:
       Milk(string, int, double);
 	  virtual string getDescricao();
-   };
+};
    
 /* fim de arquivo */

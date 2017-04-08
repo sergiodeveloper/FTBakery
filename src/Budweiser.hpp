@@ -10,10 +10,6 @@ using namespace std;
 
 class Budweiser : public Beer
    {
-   private:
-      string tipo;
-      int unidades;
-      
    public:
      Budweiser(string, int, double);
      virtual string getDescricao();

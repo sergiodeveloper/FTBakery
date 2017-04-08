@@ -9,6 +9,11 @@ int main(int argc, char* argv[])
    
    programa->verifyArguments(argc, argv);
    
+   Information::wellcome(
+	   "C++ Program " + string(argv[0]) + " running!",
+	   programa->getShortMessageMode()->getStatus()
+   );
+   
    programa->start();
 };
 

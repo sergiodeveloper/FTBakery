@@ -10,10 +10,6 @@ using namespace std;
 
 class Brahma : public Beer
    {
-   private:
-      string tipo;
-      int unidades;
-      
    public:
      Brahma(string, int, double);
      virtual string getDescricao();
