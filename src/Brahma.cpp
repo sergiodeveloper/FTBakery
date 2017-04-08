@@ -5,7 +5,6 @@
    Maio/2015
 */
 
-#include <string>
 #include "Brahma.hpp"
 
 using namespace std;
