@@ -16,7 +16,7 @@ class Corona : public Beer
       
    public:
      Corona(string, int, double);
-      virtual string getDescricao();
+     virtual string getDescricao();
    };
    
 /* fim de arquivo */

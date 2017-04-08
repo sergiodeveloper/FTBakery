@@ -16,7 +16,7 @@ class Brahma : public Beer
       
    public:
      Brahma(string, int, double);
-      virtual string getDescricao();
+     virtual string getDescricao();
    };
    
 /* fim de arquivo */

@@ -16,7 +16,7 @@ class StellaArtois : public Beer
       
    public:
      StellaArtois(string, int, double);
-      virtual string getDescricao();
+     virtual string getDescricao();
    };
    
 /* fim de arquivo */

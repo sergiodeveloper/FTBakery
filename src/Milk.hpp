@@ -18,7 +18,7 @@ class Milk: public Liquid
       
    public:
       Milk(string, int, double);
-      virtual string getDescricao();
+	  virtual string getDescricao();
    };
    
 /* fim de arquivo */

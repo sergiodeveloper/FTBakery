@@ -16,8 +16,8 @@ class Beer: public Liquid
 {
    public:
       Beer(double);
-
-      virtual string getDescricao() = 0;
+	  
+  	  virtual string getDescricao() = 0;
 };
    
 /* fim de arquivo */

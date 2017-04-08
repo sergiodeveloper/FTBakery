@@ -1,6 +1,9 @@
 
+
 #include <string>
 #include <vector>
+#include <iostream>
+#include <iomanip> 
 
 #include "a02ex00.hpp"   // Information
 #include "a02ex01_a.hpp" // MyBooleanClass
