@@ -5,6 +5,8 @@
    Maio/2015
 */
 
+#pragma once
+
 #include <string>
 #include "Liquid.hpp"
 

@@ -317,7 +317,7 @@ void MyProgram::insertMilk()
    	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    	cin.clear();
    
-   	milk = new Milk(type, weight,cost);
+   	milk = new Milk(type, units, cost);
    	myMainList.insert(myMainList.end(), milk);
    
    	cout << endl << milk->getDescricao() << " - US$ " << fixed << setprecision(2) << milk->getValor() << endl;  
@@ -338,7 +338,7 @@ void MyProgram::insertWater()
    	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    	cin.clear();
    
-   	ham = new Water(type, weight,cost);
+   	water = new Water(type, units, cost);
    	myMainList.insert(myMainList.end(), water);
    
    	cout << endl << water->getDescricao() << " - US$ " << fixed << setprecision(2) << water->getValor() << endl;  
@@ -359,7 +359,7 @@ void MyProgram::insertSoda()
    	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    	cin.clear();
    
-   	ham = new Soda(type, weight,cost);
+   	soda = new Soda(type, units, cost);
    	myMainList.insert(myMainList.end(), soda);
    
    	cout << endl << soda->getDescricao() << " - US$ " << fixed << setprecision(2) << soda->getValor() << endl;  
@@ -408,7 +408,7 @@ void MyProgram::insertBrahma()
    	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    	cin.clear();
    
-   	ham = new Brahma(type, weight,cost);
+   	brahma = new Brahma(type, units, cost);
    	myMainList.insert(myMainList.end(), brahma);
    
    	cout << endl << brahma->getDescricao() << " - US$ " << fixed << setprecision(2) << brahma->getValor() << endl;  
@@ -430,7 +430,7 @@ void MyProgram::insertBudweiser()
    	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    	cin.clear();
    
-   	ham = new Budweiser(type, weight,cost);
+   	budweiser = new Budweiser(type, units, cost);
    	myMainList.insert(myMainList.end(), budweiser);
    
    	cout << endl << budweiser->getDescricao() << " - US$ " << fixed << setprecision(2) << budweiser->getValor() << endl;  
@@ -452,7 +452,7 @@ void MyProgram::insertCorona()
    	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    	cin.clear();
    
-   	ham = new Corona(type, weight,cost);
+   	corona = new Corona(type, units, cost);
    	myMainList.insert(myMainList.end(), corona);
    
    	cout << endl << corona->getDescricao() << " - US$ " << fixed << setprecision(2) << corona->getValor() << endl;  
@@ -473,7 +473,7 @@ void MyProgram::insertStellaArtois()
    	cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    	cin.clear();
    
-   	ham = new StellaArtois(type, weight,cost);
+   	stellaArtois = new StellaArtois(type, units, cost);
    	myMainList.insert(myMainList.end(), stellaArtois);
    
    	cout << endl << stellaArtois->getDescricao() << " - US$ " << fixed << setprecision(2) << stellaArtois->getValor() << endl;

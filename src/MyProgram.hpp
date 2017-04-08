@@ -13,6 +13,14 @@
 #include "a02ex03_g.hpp" // Ham
 #include "a02ex03_h.hpp" // Cheese
 #include "a02ex03_i.hpp" // CheeseCottage
+#include "Milk.hpp"
+#include "Water.hpp"
+#include "Soda.hpp"
+#include "Brahma.hpp"
+#include "Budweiser.hpp"
+#include "Corona.hpp"
+#include "StellaArtois.hpp"
+
 
 
 using namespace std;
