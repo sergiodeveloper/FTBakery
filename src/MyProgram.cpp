@@ -3,38 +3,26 @@
 #include <iostream>
 #include <iomanip> 
 
-#include "a02ex00.hpp"
-#include "a02ex01_a.hpp"
-#include "a02ex03.hpp"
-#include "a02ex03_a.hpp"
-#include "a02ex03_b.hpp"
-#include "a02ex03_c.hpp"
-#include "a02ex03_d.hpp"
-#include "a02ex03_e.hpp"
-#include "a02ex03_f.hpp"
-#include "a02ex03_g.hpp"
-#include "a02ex03_h.hpp"
-#include "a02ex03_i.hpp"
 #include "MyProgram.hpp"
+
 
 using namespace std;
 
 
-MyProgram::MyProgram(int argc, char* argv[])
+MyProgram::MyProgram()
 {
    this->verboseMode = NULL;
    this->shortMessageMode = NULL;
-   
-   
-   verifyArguments(argc, argv);
-   myMainList.clear();
-   Information::wellcome("C++ Program " + string(argv[0]) + " running!", shortMessageMode->getStatus());
-   process();
-   Information::bye(shortMessageMode->getStatus());
-   clearAll();
-   
-};
-      
+}
+
+void MyProgram::start(){
+	myMainList.clear();
+    //Information::wellcome("C++ Program " + string(argv[0]) + " running!", shortMessageMode->getStatus()); TODO
+    process();
+    Information::bye(shortMessageMode->getStatus());
+    clearAll();
+}
+
 void MyProgram::process()
 {
    vector<string> opcoes({ "Exit", "List Database", "Insert Items" });
@@ -53,7 +41,7 @@ void MyProgram::process()
       };
 };
    
-void MyProgram::clearAll()   // corrigido!
+void MyProgram::clearAll()
 {
    vector<Food *>::iterator scan = myMainList.begin();
    

@@ -1,6 +1,19 @@
+
 #include <string>
-#include "a02ex01_a.hpp"
-#include "a02ex03_b.hpp"
+#include <vector>
+
+#include "a02ex00.hpp"   // Information
+#include "a02ex01_a.hpp" // MyBooleanClass
+#include "a02ex03_a.hpp" // Menu
+#include "a02ex03_b.hpp" // Food
+#include "a02ex03_c.hpp" // Bread
+#include "a02ex03_d.hpp" // Cracker
+#include "a02ex03_e.hpp" // FilledWafer
+#include "a02ex03_f.hpp" // Mortadella
+#include "a02ex03_g.hpp" // Ham
+#include "a02ex03_h.hpp" // Cheese
+#include "a02ex03_i.hpp" // CheeseCottage
+
 
 using namespace std;
 
@@ -18,8 +31,8 @@ private:
 	* Lista onde serão armazenados os Foods adicionados
 	*/
 	vector<Food *> myMainList;
+	
 	void process(void);
-	void verifyArguments(int, char* []);
 	void clearAll(void);
 
 	void listItems(void);
@@ -33,7 +46,11 @@ private:
 	void insertMortadella(void);
 
 public:
-	MyProgram(int argc, char* argv[]);
+	MyProgram();
+	
+	void start();
+	
+	void verifyArguments(int, char* []);
 	
 	const MyBooleanClass* getVerboseMode();
 	void setVerboseMode(MyBooleanClass*);

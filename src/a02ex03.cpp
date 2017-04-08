@@ -12,11 +12,7 @@
 
 #include "MyProgram.hpp"
 
-   
-int main(int argc, char* argv[])
-{
-   MyProgram programa(argc, argv);
-};
+
 
 
 /* fim de arquivo */
